@@ -78,7 +78,8 @@ header{
     background-image: url("../images/SpongeBob_stock_art.png");
     background-repeat: no-repeat;
     background-position: left;
-    background-size: 20%;
+    background-size: 20%;   
+    border: 1px solid red;
 }
 
 header h2{
