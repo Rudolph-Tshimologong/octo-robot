@@ -30,38 +30,48 @@ html {
 }
 *, *:before, *:after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+	padding: 0 5%;
 }
 
 nav{
-	border: 1px solid rgb(255, 255, 255);
-	margin-bottom: auto;
-    background-color: #0B2343;
-    /* border-radius: 10px; */
-    padding: 0.1rem 1.3rem;
-    position: fixed;
+	display: flex;
+	position: fixed;
     width: 99%;
-    overflow:visible;
-	/* opacity: 0.2; */
+    margin: auto;
+    padding: 10px 0;
+    align-items: top;
+    justify-content: space-between;
+	background-color: #0B2343;
+	border-bottom: 1px solid #ffcc05 ;
+
 }
 
 nav img {
-	width: 150px;
-	height: 90px;
-	color: white;	
+	width: auto;
+	color: #ffcc05;
+	height: 5rem;
+	margin: 1rem;
 }
 
 .sec1 {
 	border: 1px solid green;
 	padding-top: 6rem;
-	background-color: rgb(0, 186, 228);
-	background: url(https://c0.wallpaperflare.com/preview/300/178/515/china-haixi-mengguzuzangzuzizhizhou-unnamed-road.jpg);
+	background-color: #0B2343;
+	/* background: url(https://c0.wallpaperflare.com/preview/300/178/515/china-haixi-mengguzuzangzuzizhizhou-unnamed-road.jpg); */
 	background-size: cover;
-	
+	padding: 8%;
 }
 
 .sec2 {
-	border: 1px solid green;
-	background-color: #FF6B40;
+	/* border: 1px solid green; */
+	background-color: #ffcc05;
+	padding: 10rem;
 	/* opacity: 0.6; */
 	
 }
@@ -69,7 +79,7 @@ nav img {
 .sec3 {
 	border: 3px solid rgb(255, 0, 0);
 	padding: 1rem auto;
-	background-color: #ffcc05;
+	
 	display: flex;
 	margin: 0.5rem 0;
 	
@@ -83,10 +93,12 @@ nav img {
 	border: 2px solid green;
 	margin: 0.5rem;
 	border-radius: 12px;
+	background-color: #ffffff;
 }
 
 /* section 3 have two sections left-bar and right-bar */
 .right-bar {
+	background-color: #ffffff;
 	flex-basis: 60%;
 	float: right;
 	border: 2px solid rgb(0, 0, 0);
@@ -118,8 +130,9 @@ nav ul{
 }
 
 nav li a {
-	color: white;
+	color: #ffcc05;
 	padding-bottom: 0.9rem;
+	text-decoration: none;
 }
 
 nav h1{
@@ -134,22 +147,40 @@ nav h1{
 }
 
 nav ul li {
-	border: 1px solid rgb(24, 19, 19);
+	
 	margin: 0.5rem 1rem;
-	color: white;
-	background-color: #1a375c;
-	border-radius: 10px;
-	padding:0.2rem 1rem;
+	/* background-color: #1a375c; */
+	/* border-radius: 1px; */
+	/* padding:0.5rem 1rem; */
+
+	font-family: century;
+    font-size: 1.1em;
+    font-weight: bold;
+    display: inline-block;
+	
+    margin: 10px 20px;
+
+	text-decoration: none;
+    color: #ffcc05;
+    font-weight: bold;
+    transition: all .5s ease;
+
+
 }
 
-img{
-	height: 320px;
-	width:320px;
+nav ul li a:hover {
+    color: #0B2343;
+    background-color: rgb(196, 213, 228);
+    box-shadow: 0 0 10px #ffcc05;
+    cursor: pointer;
+	border-radius: 2px;
+	padding: 0.5rem;
 }
 
 
 
-h2{
+
+/* h2{
 	color: #0B2343;
 	font-family: 'Source Sans Pro',sans-serif;
 	font-weight: 700;
@@ -197,7 +228,7 @@ p{
 	background-color: #0B2343;
 	
 
-}
+} */
 
 
 
