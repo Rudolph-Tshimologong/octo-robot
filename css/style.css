@@ -54,22 +54,48 @@ nav img {
 	border: 1px solid green;
 	padding-top: 6rem;
 	background-color: rgb(0, 186, 228);
+	background: url(https://c0.wallpaperflare.com/preview/300/178/515/china-haixi-mengguzuzangzuzizhizhou-unnamed-road.jpg);
+	background-size: cover;
 	
 }
 
 .sec2 {
 	border: 1px solid green;
-	padding-top: 6rem;
 	background-color: #FF6B40;
+	/* opacity: 0.6; */
 	
 }
 
 .sec3 {
-	border: 1px solid green;
-	padding-top: 6rem;
+	border: 3px solid rgb(255, 0, 0);
+	padding: 1rem auto;
 	background-color: #ffcc05;
+	display: flex;
+	margin: 0.5rem 0;
 	
 }
+
+/* section 3 have two sections left-bar and right-bar */
+.left-bar {
+	flex-basis: 40%;
+	float: left;
+	text-align: center;
+	border: 2px solid green;
+	margin: 0.5rem;
+	border-radius: 12px;
+}
+
+/* section 3 have two sections left-bar and right-bar */
+.right-bar {
+	flex-basis: 60%;
+	float: right;
+	border: 2px solid rgb(0, 0, 0);
+	margin: 0.5rem; 
+	padding: 0.2rem 2rem; /* content inside of the right bar */
+	border-radius: 12px;
+	
+}
+
 footer{
 	background-color: #071930;
 }
@@ -91,7 +117,7 @@ nav ul{
 	justify-content: flex-end;
 }
 
-li a {
+nav li a {
 	color: white;
 	padding-bottom: 0.9rem;
 }
@@ -107,7 +133,7 @@ nav h1{
 	display: none;
 }
 
-ul li {
+nav ul li {
 	border: 1px solid rgb(24, 19, 19);
 	margin: 0.5rem 1rem;
 	color: white;
@@ -164,10 +190,13 @@ p{
 
 .light-blue{
 	background-color:#00BAE4;
+	
 }
 
 .logo-dark{
 	background-color: #0B2343;
+	
+
 }
 
 

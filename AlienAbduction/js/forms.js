@@ -77,7 +77,7 @@ function sendData() {
   XHR.addEventListener("load", function(event) {
     if (XHR.readyState === XHR.DONE) {
       if (XHR.status === 200) {
-        alert("Your order has been received! Check your email.");
+          sendEmail();
       } else {
         alert("Oh oh! We have a problem! " + XHR.responseText + ".");
       }
@@ -98,4 +98,28 @@ function sendData() {
 
   // Finally, send our data.
   XHR.send(urlEncodedData);
+}
+
+
+function sendEmail() {
+
+  //  let body;
+  Email.send({
+
+    Host: "smtp.elasticemail.com",
+    Username: "rudolphpuane@gmail.com",
+    Password: "3AE63D7BF5A453BBD0A4C1815538E2CB47E5",
+    To: 'rudolph@dsa.tshimologong.joburg',
+    From: `${form.querySelector("[name='email']").value}`,
+    Subject: `subject `,
+    body: `
+        Name: ${form.querySelector("[name='yourname']").value},
+        Email: ${form.querySelector("[name='email']").value},
+        Contact#: ${form.querySelector("[name='phone']").value}`
+
+  })
+    .then(function (message) {
+      alert("Your order has been received! Check your email.")
+    });
+    
 }
