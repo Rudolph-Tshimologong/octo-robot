@@ -27,13 +27,14 @@ font-family: 'Source Sans Pro', sans-serif;
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
-
 
 .container {
 	padding: 0 5%;
@@ -48,8 +49,40 @@ nav{
     align-items: top;
     justify-content: space-between;
 	background-color: #0B2343;
-	border-bottom: 1px solid #ffcc05 ;
+	border-bottom: 1px solid #ffcc05;
+}
 
+nav ul{
+	display: flex;
+	margin: 20px 0px;
+	list-style:none;
+	padding:0;
+}
+
+nav ul li {
+	font-family: century;
+    font-size: 1.1em;
+    font-weight: bold;
+    display: inline-block;
+	list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffcc05;
+    padding-bottom: 0.9rem;
+    font-weight: bold;
+    transition: all .5s ease;
+}
+
+nav ul li a:hover {
+    color: #0B2343;
+    background-color: rgb(196, 213, 228);
+    box-shadow: 0 0 10px #ffcc05;
+    cursor: pointer;
+	border-radius: 2px;
+	padding: 0.5rem;
 }
 
 nav img {
@@ -59,22 +92,34 @@ nav img {
 	margin: 1rem;
 }
 
-.sec1 {
-	border: 1px solid green;
-	padding-top: 6rem;
+/*section 2*/
+.space{
 	background-color: #0B2343;
-	/* background: url(https://c0.wallpaperflare.com/preview/300/178/515/china-haixi-mengguzuzangzuzizhizhou-unnamed-road.jpg); */
-	background-size: cover;
-	padding: 8%;
-}
-
-.sec2 {
-	/* border: 1px solid green; */
-	background-color: #ffcc05;
-	padding: 10rem;
-	/* opacity: 0.6; */
+	padding: 10%;
 	
 }
+
+h2{
+	color: #ffcc05;
+	font-family: 'Source Sans Pro',sans-serif;
+	font-weight: 700;
+	font-size:2rem;
+}
+
+.goals{
+	background-color: #ffcc05;
+	padding: 5%;
+	margin: 0px;
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+    padding: 40px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
 
 .sec3 {
 	border: 3px solid rgb(255, 0, 0);
@@ -108,6 +153,16 @@ nav img {
 	
 }
 
+.cloud{
+	background-color: #ffcc05;
+	padding: 10%;
+}
+
+.locationPart{
+	background-color: white;
+	padding: 1.5%;
+}
+
 footer{
 	background-color: #071930;
 }
@@ -118,67 +173,10 @@ footer img{
 	height: auto;
 	justify-content: left;
 }
-
-
-nav ul{
-	display: inline-flex;
-	/* border: 1px solid rgb(255, 255, 255); */
-	margin: 2rem 0;
-	list-style:none;
+footer p{
 	float: right;
-	justify-content: flex-end;
-}
-
-nav li a {
 	color: #ffcc05;
-	padding-bottom: 0.9rem;
-	text-decoration: none;
 }
-
-nav h1{
-	color: #0B2343;
-	font-family: 'Source Sans Pro',sans-serif;
-	font-weight: 900;
-	font-size: 1.5rem;
-	justify-content: flex-start;
-	float: left;
-	color: white;
-	display: none;
-}
-
-nav ul li {
-	
-	margin: 0.5rem 1rem;
-	/* background-color: #1a375c; */
-	/* border-radius: 1px; */
-	/* padding:0.5rem 1rem; */
-
-	font-family: century;
-    font-size: 1.1em;
-    font-weight: bold;
-    display: inline-block;
-	
-    margin: 10px 20px;
-
-	text-decoration: none;
-    color: #ffcc05;
-    font-weight: bold;
-    transition: all .5s ease;
-
-
-}
-
-nav ul li a:hover {
-    color: #0B2343;
-    background-color: rgb(196, 213, 228);
-    box-shadow: 0 0 10px #ffcc05;
-    cursor: pointer;
-	border-radius: 2px;
-	padding: 0.5rem;
-}
-
-
-
 
 /* h2{
 	color: #0B2343;
