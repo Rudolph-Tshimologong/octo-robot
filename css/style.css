@@ -267,7 +267,7 @@ h2{
 footer{
 	background-color: #071930;
 	display: flex;
-	border: 1PX solid red;
+	/* border: 1PX solid red; */
 	width: 100%;
 }
 
@@ -280,7 +280,7 @@ footer img{
 footer p{
 	color: #ffcc05;
 	text-align: center;
-	border: 1PX solid red;
+	/* border: 1PX solid red; */
 	padding: 0 38%;
 	padding-top: 5%;
 }
