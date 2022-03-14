@@ -269,6 +269,7 @@ footer{
 	display: flex;
 	/* border: 1PX solid red; */
 	width: 100%;
+	border-top: 5px double #ffcc05;
 }
 
 footer img{
@@ -281,8 +282,9 @@ footer p{
 	color: #ffcc05;
 	text-align: center;
 	/* border: 1PX solid red; */
-	padding: 0 38%;
-	padding-top: 5%;
+	padding: 0 33%;
+	padding-top: 1.5%;
+	font-size: x-large;
 }
 
 
@@ -331,8 +333,24 @@ aside address{
 	float: right;
 	flex-basis: 60%;
 	/* border: 10px solid green; */
-
+	text-align: center;
+	text-decoration: none;
+	list-style-type: none;
+	padding-top: 1.5%;
+	font-size: x-large;
   }
+
+  aside address li{
+	text-decoration: none;
+	list-style-type: none;
+	padding-top: 1.5%;
+  }
+
+  aside address h2 {
+	  color:#0B2343;
+	  text-decoration:double underline #ffcc05;
+  }
+
 
 
 aside{
