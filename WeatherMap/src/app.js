@@ -61,12 +61,12 @@ const handleWeather = (data) => {
   showIcon.alt = 'Current Weather Icon';
 
   const temp = `${convertToDeg(data.current.temp)}&deg;`;
-  const feeling = `Feels Like ${convertToDeg(data.current.feels_like)},`;
+  // const feeling = `Feels Like ${convertToDeg(data.current.feels_like)},`;
   const mainDesc = data.current.weather[0].main;
   const desc = data.current.weather[0].description;
   setInterval(() => {
     currentTemp.innerHTML = temp;
-    feelsLike.innerHTML = feel;
+    // feelsLike.innerHTML = feel;
     description.innerHTML = `${mainDesc} - ${desc}`;
   }, [1000]);
 
