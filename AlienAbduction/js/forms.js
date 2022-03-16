@@ -36,9 +36,11 @@ function sendData() {
       encodeURIComponent(form.querySelector("[name='requesteddate']").value)
   );
   urlEncodedDataPairs.push(
-    encodeURIComponent("quantitty") +
+    encodeURIComponent("quantity") +
       "=" +
-      encodeURIComponent(form.querySelector("[name='peopleno']").value)
+      encodeURIComponent(form.querySelector("[name='peopleno']").value),
+      console.log(form.querySelector("[name='peopleno']").value)
+      
   );
 
   // radio buttons
@@ -66,7 +68,7 @@ function sendData() {
   urlEncodedDataPairs.push(
     encodeURIComponent("subscribe") +
       "=" +
-      encodeURIComponent(form.querySelector("[name='specialrequest']").checked)
+      encodeURIComponent(form.querySelector("[name='subscribe']").checked)
   );
 
   // Combine the pairs into a single string and replace all %-encoded spaces to
@@ -77,7 +79,6 @@ function sendData() {
   XHR.addEventListener("load", function(event) {
     if (XHR.readyState === XHR.DONE) {
       if (XHR.status === 200) {
-          sendEmail();
       } else {
         alert("Oh oh! We have a problem! " + XHR.responseText + ".");
       }
@@ -98,28 +99,4 @@ function sendData() {
 
   // Finally, send our data.
   XHR.send(urlEncodedData);
-}
-
-
-function sendEmail() {
-
-  //  let body;
-  Email.send({
-
-    Host: "smtp.elasticemail.com",
-    Username: "rudolphpuane@gmail.com",
-    Password: "3AE63D7BF5A453BBD0A4C1815538E2CB47E5",
-    To: 'rudolph@dsa.tshimologong.joburg',
-    From: `${form.querySelector("[name='email']").value}`,
-    Subject: `subject `,
-    body: `
-        Name: ${form.querySelector("[name='yourname']").value},
-        Email: ${form.querySelector("[name='email']").value},
-        Contact#: ${form.querySelector("[name='phone']").value}`
-
-  })
-    .then(function (message) {
-      alert("Your order has been received! Check your email.")
-    });
-    
 }
